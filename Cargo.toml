@@ -1,0 +1,16 @@
+[package]
+name = "call_rust_from_python"
+version = "0.1.0"
+authors = ["niharikag <niharika.gauraha@gmail.com>"]
+edition = "2018"
+
+
+[lib]
+name = "rust_library"
+path = "src/lib.rs"
+#crate-type=["dylib"]
+crate-type = ["dylib"]
+
+
+[dependencies]
+pyo3 = "0.11"
